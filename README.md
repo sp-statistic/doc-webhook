@@ -16,7 +16,8 @@ POST https://smallprice.date/api/webhook/orders
   "utmCampaign": "123",
   "utmMedium": "",
   "utmSource": "",
-  "createdAt": "2025-04-15 00:25:00"
+  "createdAt": "2025-04-15 00:25:00",
+  "timezone": "UTC"
 }
 ```
 
@@ -36,7 +37,7 @@ POST https://smallprice.date/api/webhook/orders
 | `utmMedium`   | string\|null | UTM Medium (`cpc`, `email`, и т.д.)                    |
 | `utmCampaign` | string\|null | UTM Кампания                                             |
 | `createdAt`   | string\|null | Дата/время заказа в формате `Y-m-d H:i:s` или `d-m-Y H:i:s`. По умолчанию — текущее время. |
-| `timezone`    | string\|null | Временная зона. По умолчанию — UTC. |
+| `timezone`    | string\|null | Временная зона. По умолчанию — UTC. (переданную временную зону конвертируем в Europe/Kyiv) |
 
 ## ✅ Пример cURL
 
